@@ -1,0 +1,26 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@600&display=swap");
+body {
+  font-size: 18px;
+}
+
+header {
+  background-color: hsl(193deg, 100%, 96%);
+}
+
+.section-2 {
+  background-color: aqua;
+  font-size: 3em;
+  color: hsl(322deg, 100%, 66%);
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228deg, 45%, 44%);
+}
+
+/*# sourceMappingURL=styles.css.map */

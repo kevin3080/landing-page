@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@600&display=swap');
+@import "variables";
+@import "mixins";
+
+
+body{
+    font-size: 18px;
+}
+header{
+    background-color: $Very-Pale-Cyan;
+}
+.section-2{
+    @include color();
+}
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+.attribution 
+    a { 
+    color: hsl(228, 45%, 44%); 
+}
