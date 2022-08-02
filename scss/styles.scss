@@ -1,17 +1,88 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@600&display=swap');
 @import "variables";
 @import "mixins";
 
-
-body{
-    font-size: 18px;
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
-header{
-    background-color: $Very-Pale-Cyan;
+body{
+    background-color: $white;
+    color: $Very-Dark-Cyan;
+    
+    font-family: $font-OpenSans;
+    main{
+        font-size: 18px;
+        width: 375px;
+        margin: 0 auto 25px;
+        @include desktop-view(95%);
+    }
+}
+
+.nav{
+    width: 100%;
+    
+    display: flex;
+    justify-content: space-between;
+    margin: 25px auto 100px;
+    @include desktop-view(95%);
+    align-items: center;
+
+    &__logo{
+        width: 120px;
+        height: 20px;
+        @include desktop-view(220px, 35px)
+    }
+    &__btn{
+
+        @include button($white, $Very-Pale-Cyan, $Very-Dark-Cyan, 100px, 30px, false);
+        box-shadow: 2px 4px 11px hsl(208deg 11% 55% / 20%);
+        @include desktop-view(134px, 42px);
+        font-weight: 700;
+        @include button-hover($Grayish-Blue, $white)
+      
+    }
+}
+.header{
+    &__title{
+        font-family: $font-OpenSans;
+        text-align: center;
+        width: 290px;
+        font-size: 1.48em;
+        margin: 0 auto 36px;
+        @include desktop-view(1010px, unset, 2.98em)
+    }
+    &__description{
+        text-align: center;
+        font-size: 1em;
+        width: 340px;
+        margin: 0 auto 49px;
+        @include desktop-view(590px, 80px, 1.95em);
+    }
+    &__btn{
+        @include button($Pink-color, $Very-Pale-Cyan, $white, 370px, 55px, true);
+        @include button-hover($white, $Pink-color-hover );
+        margin: 0 auto;
+        @include desktop-view(400px,80px, 1.25em);
+        margin-bottom: 290px;
+    }
+    &__img{
+        width: 300px;
+        display: block;
+        margin: 0 auto 130px;
+        @include desktop-view(1020px,725px);
+    }
 }
 .section-2{
-    @include color();
+  @include flexSections;
 }
+.section-3{
+    @include flexSections;
+}
+.section-4{
+    @include flexSections;
+}
+
 .attribution { 
     font-size: 11px; 
     text-align: center; 
@@ -19,4 +90,5 @@ header{
 .attribution 
     a { 
     color: hsl(228, 45%, 44%); 
+    
 }
