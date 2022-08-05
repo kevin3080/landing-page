@@ -1,10 +1,17 @@
 
-@mixin desktop-view($width, $heigth: unset, $font-size: unset) {
+@mixin desktop-view($width, $heigth: unset, $font-size: unset, $margin:unset) {
     @media (min-width: 1000px) {   
         width: $width;
         height: $heigth;
         font-size: $font-size;
+        margin: $margin auto;
     }
+}
+@mixin header-section {
+    @media (min-width: 1000px) {
+        text-align: left;
+    }
+
 }
 
 @mixin button($bg-color, $br-color, $fn-color, $width, $height, $center) {
@@ -30,10 +37,13 @@
 }
 
 @mixin flexSections {
+    
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 180px;
+    margin: 80px 75px;
+    box-shadow: 1px 1px 9px hsla(209, 11%, 55%, 0.404);;
+    border-radius: 10px;
     &__img{
      width: 246px;
      margin-bottom: 78px;
@@ -48,5 +58,34 @@
         text-align: center;
         font-size: 0.9em;
         width: 330px;
+    }
+}
+
+@mixin flexSection-desktop($direction: row) {
+    @media (min-width: 1000px) {
+        flex-direction: row;
+        justify-content: space-around;
+        flex-direction: $direction;
+        &__img{
+            width: 520px;
+           } 
+           &__title{
+            font-size: 2.3em;
+            text-align: left;
+           }
+           &__description{
+            text-align: left;
+            font-size: 1em;
+            width: 495px;
+           }
+    }
+}
+@mixin desktop-header {
+    @media (min-width: 1000px) {
+        margin: 0 0 36px;
+        padding-left: 12px ;
+        text-align: left;
+        width: 520px;
+        font-size: 1em;
     }
 }
