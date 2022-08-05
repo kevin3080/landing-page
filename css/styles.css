@@ -205,6 +205,7 @@ body main {
   margin: 80px 75px;
   box-shadow: 1px 1px 9px hsla(209deg, 11%, 55%, 0.404);
   border-radius: 10px;
+  padding-bottom: 30px;
 }
 .section-2__img {
   width: 246px;
@@ -248,6 +249,7 @@ body main {
   margin: 80px 75px;
   box-shadow: 1px 1px 9px hsla(209deg, 11%, 55%, 0.404);
   border-radius: 10px;
+  padding-bottom: 30px;
 }
 .section-3__img {
   width: 246px;
@@ -291,6 +293,7 @@ body main {
   margin: 80px 75px;
   box-shadow: 1px 1px 9px hsla(209deg, 11%, 55%, 0.404);
   border-radius: 10px;
+  padding-bottom: 30px;
 }
 .section-4__img {
   width: 246px;
@@ -327,9 +330,58 @@ body main {
   }
 }
 
+.join-Community {
+  position: relative;
+  margin: 0 75px -105px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 0px;
+  background-color: #fff;
+  box-shadow: 0 3px 16px hsla(209deg, 11%, 55%, 0.404);
+  border-radius: 10px;
+}
+@media (min-width: 1000px) {
+  .join-Community {
+    max-width: 100%;
+    width: 55%;
+    margin: 0 auto -105px;
+  }
+}
+.join-Community__title {
+  margin-bottom: 15px;
+  font-size: 1.5em;
+  text-align: center;
+}
+.join-Community__btn {
+  background-color: hsl(322deg, 100%, 66%);
+  border: none;
+  display: block;
+  border: 1px solid hsl(193deg, 100%, 96%);
+  border-radius: 50px;
+  color: #fff;
+  width: false;
+  height: unset;
+  margin-top: 20px;
+  padding: 24px 100px;
+  border-radius: 40px;
+  font-size: 1em;
+  box-shadow: 0 6px 16px hsla(209deg, 11%, 55%, 0.404);
+  border: none;
+}
+.join-Community__btn:hover {
+  cursor: pointer;
+  color: #fff;
+  background-color: hsl(322deg, 100%, 80%);
+}
+
 footer {
-  margin: 80px 75px;
-  border: 1px solid red;
+  display: flex;
+  flex-direction: column;
+  background-color: hsl(192deg, 100%, 9%);
+  color: #fff;
+  padding: 200px 75px 30px;
 }
 footer .attribution {
   font-size: 11px;

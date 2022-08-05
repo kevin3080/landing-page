@@ -110,11 +110,48 @@ body{
 .section-4{
     @include flexSections;
     @include flexSection-desktop;
+
  
 }
+.join-Community{
+    position: relative;
+    @media (min-width: 1000px) {
+        max-width: 100%;
+        width: 55%;
+        margin: 0 auto -105px;
+    }
+    margin: 0 75px -105px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 0px;
+    background-color: $white;
+    box-shadow: 0 3px 16px hsla(209, 11%, 55%, 0.404);
+    border-radius: 10px;
+    &__title{
+        margin-bottom: 15px;
+        font-size: 1.5em;
+        text-align: center;
+    }
+    &__btn{
+        @include button($Pink-color, $Very-Pale-Cyan, $white, false);
+        @include button-hover($white, $Pink-color-hover );
+        margin-top: 20px;
+        padding: 24px 100px;
+        border-radius: 40px;
+        font-size: 1em;
+        box-shadow: 0 6px 16px hsla(209, 11%, 55%, 0.404);
+        border: none;
+    }
+
+}
 footer{
-    margin: 80px 75px;
-    border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    background-color: $Very-Dark-Cyan;
+    color: $white;
+    padding: 200px 75px 30px;
     .attribution { 
         font-size: 11px; 
         text-align: center; 

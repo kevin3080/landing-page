@@ -14,7 +14,7 @@
 
 }
 
-@mixin button($bg-color, $br-color, $fn-color, $width, $height, $center) {
+@mixin button($bg-color, $br-color, $fn-color, $width: unset, $height: unset, $center:unset) {
     background-color: $bg-color;
     border: none;
     display: block;
@@ -42,8 +42,9 @@
     flex-direction: column;
     align-items: center;
     margin: 80px 75px;
-    box-shadow: 1px 1px 9px hsla(209, 11%, 55%, 0.404);;
+    box-shadow: 1px 1px 9px hsla(209, 11%, 55%, 0.404);
     border-radius: 10px;
+    padding-bottom: 30px;
     &__img{
      width: 246px;
      margin-bottom: 78px;
