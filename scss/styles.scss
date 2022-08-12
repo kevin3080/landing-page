@@ -21,7 +21,6 @@ body{
     display: flex;
     justify-content: space-between;
     margin: 0px  auto 100px;
-    @include desktop-view(95%);
     align-items: center;
 
     &__logo{
@@ -44,8 +43,9 @@ body{
     background-image: url(../images/bg-hero-mobile.svg);
     @media (min-width: 1000px) {
         background-image: url(../images/bg-hero-desktop.svg);
+        padding: 45px 75px;
     }
-    padding: 45px 75px;
+    padding: 45px 22px;
     .section-header{
         @media (min-width: 1000px) {
             display: flex;
@@ -119,7 +119,7 @@ body{
         width: 55%;
         margin: 0 auto -105px;
     }
-    margin: 0 0 -105px;
+    margin: 0 22px -105px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -146,19 +146,27 @@ body{
 
 }
 footer{
-    display: flex;
-    flex-direction: column;
     background-color: $Very-Dark-Cyan;
     color: $white;
     padding: 200px 30px 30px;
+    @media (min-width:1000px){
+        display: flex;
+        justify-content: space-around;
+    }
     .footer{
         &__contact{
+            @media (min-width:1000px){
+                width: 400px;
+            }
             &__logo-footer{
                 margin-bottom: 50px;
             }
             &__location-contact{
                 display: flex;
                 margin-bottom: 25px;
+                @media (min-width:1000) {
+                    width: 400px;
+                }
                 img{
                     margin-right: 12px;
                     @include desktop-view(20px, 19px);
@@ -167,14 +175,34 @@ footer{
                 }
                 p{
                 padding-left: 12px;
+                font-size: 0.9em;
                 }
                 a{
                     text-decoration: none;
                     color: $Very-Pale-Cyan;
+                    font-size: 0.9em;
                 }
             }
         }
+        &__end__social-media{
+            font-size: 2em;
+            text-align: center;
+            a{
+                color: unset;
+            }
+            .fa-brands{
+                margin-right: 12px;
+            }
+        
+        }
         &__description{
+            @media (min-width:1000px){
+                display: flex;
+                justify-content: space-between;
+                width: 300px;
+                font-size: 1.1em;
+                margin-top: 85px;
+            }
             li{
                 list-style: none;
                 margin-bottom: 15px;
@@ -185,12 +213,19 @@ footer{
             }
         }
         &__end{
-
+            margin: auto 0;
             &__social-media__copy{
                 margin-top: 25px;
                 text-align: center;
             }
-           
+            aside{
+                @media (min-width: 1000px){
+                    position: relative;
+                    top: 90px;
+                    font-size: 0.7em;
+
+                }
+            }
         }
     }
     .attribution { 

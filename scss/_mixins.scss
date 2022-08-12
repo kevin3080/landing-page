@@ -41,7 +41,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 80px 75px 90px;
+    margin: 80px 22px 90px;
     box-shadow: 1px 1px 9px hsla(209, 11%, 55%, 0.404);
     border-radius: 10px;
     padding-bottom: 30px;
@@ -67,6 +67,7 @@
         flex-direction: row;
         justify-content: space-around;
         flex-direction: $direction;
+        margin: 80px 75px 90px;
         &__img{
             width: 520px;
            } 
@@ -88,5 +89,11 @@
         text-align: left;
         width: 520px;
         font-size: 1em;
+    }
+}
+@mixin footer-desktop($width){
+    @media (min-width:1000px){
+        display: flex;
+        width: $width;     
     }
 }
